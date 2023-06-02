@@ -40,13 +40,22 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 
 .imageContainer {
     position: relative;
-    /* width: 50%; */
-  }
+    /* background-color: #34a3da !important; */
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
   
   .first {
     opacity: 1;
@@ -69,8 +78,11 @@ body{
   }
   
   .imageContainer:hover .first {
-    opacity: 0.3;
-  }
+   opacity:0.3 !important;
+   cursor: pointer;
+   filter: invert(78%) sepia(96%) saturate(557%) hue-rotate(101deg) brightness(101%) contrast(105%);
+   -webkit-filter: invert(78%) sepia(96%) saturate(557%) hue-rotate(101deg) brightness(101%) contrast(105%);
+}
   
   .imageContainer:hover .middle {
     opacity: 1;
@@ -152,7 +164,7 @@ span {
 }
 
 h2:hover, span:hover {
-    color: hsl(178, 100%, 50%);
+    color: #00fff7;
     cursor: pointer;
     transition-duration: 500ms;
 }
